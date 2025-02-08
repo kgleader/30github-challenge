@@ -1,7 +1,6 @@
 class MenuItem {
   final String name;
-  final String price;
-  final String image;
+  final double price;
 
-  MenuItem({required this.name, required this.price, required this.image});
+  MenuItem({required this.name, required this.price});
 }
