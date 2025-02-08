@@ -1,17 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:simple_app/screens/menu_screen.dart';
 
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
+class MenuScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: MenuScreen(),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Menu Screen'),
+      ),
+      body: Center(
+        child: Text('Welcome to the Menu Screen!'),
+      ),
     );
   }
 }
