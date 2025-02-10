@@ -1,24 +1,16 @@
 import 'package:flutter/material.dart';
-import '../models/menu_item.dart';
 
-class MenuItemScreen extends StatelessWidget {
-  final MenuItem item;
-
-  const MenuItemScreen({super.key, required this.item});
+class MenuScreen extends StatelessWidget {
+  const MenuScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(item.name)),
+      appBar: AppBar(
+        title: Text('Menu Screen'),
+      ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Image.asset(item.image),
-            Text(item.name),
-            Text('\$${item.price}'),
-          ],
-        ),
+        child: Text('Welcome to the Menu Screen!'),
       ),
     );
   }
