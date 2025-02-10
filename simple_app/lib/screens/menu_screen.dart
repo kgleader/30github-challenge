@@ -8,7 +8,7 @@ class MenuScreen extends StatelessWidget {
   final List<MenuItem> menuItems = [
     MenuItem(name: 'Чай', price: 2.5, image: 'assets/tea.jpg'),
     MenuItem(name: 'Кофе', price: 3.0, image: 'assets/coffee.jpg'),
-    MenuItem(name: 'Пай', price: 4.0, image: 'assets/pie.jpg'),
+    MenuItem(name: 'Пирог', price: 4.0, image: 'assets/pie.jpg'),
   ];
 
   MenuScreen({super.key});
